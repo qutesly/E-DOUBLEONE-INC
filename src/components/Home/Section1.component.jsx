@@ -20,7 +20,7 @@ const Section1Component = () => {
         <CustomButton title="View website" />
       </div>
       <div className="flex items-center justify-center relative z-30">
-        <img className="w-[722px]" src="./images/Union.png" alt="" />
+        <img className="w-[750px]" src="./images/Union.png" alt="" />
         <img className="absolute top-[5px] right-[100px]" src="./images/arrow-circle-right.png" alt="" />
       </div>
       <div className="w-full h-[150px] absolute left-0 right-0 bottom-0 z-50 bg-gradient-to-t from-[#3A4CBA] "></div>
