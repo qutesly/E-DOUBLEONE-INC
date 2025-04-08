@@ -3,10 +3,10 @@ import CustomButton from "./Custom-button";
 
 const ContactUs = () => {
   return (
-    <div className="w-full h-full relative flex items-center justify-center mb-[333px]">
-      <div className="w-[900px] h-full p-[1px] bg-gradient-to-tl from-black to-white rounded-2xl mt-[10rem]">
-        <div className="w-full flex items-start justify-between py-10 px-12 bg-[#283082] rounded-2xl text-white">
-          <div className="flex flex-col items-start">
+    <div className="w-full h-full relative flex items-center justify-center mb-0 md:mb-[333px] p-8">
+      <div className="w-[900px] h-full p-[1px] bg-gradient-to-tl from-black to-white rounded-2xl mt-[10rem] ">
+        <div className="w-full  flex flex-col lg:flex-row items-start justify-between py-10 px-12 bg-[#283082] rounded-2xl text-white">
+          <div className="w-full flex flex-col items-start mb-4 lg:mb-0">
             <h2 className="text-[24px] font-[700] leading-[143%] mb-4">
               Get in touch
             </h2>
@@ -24,22 +24,22 @@ const ContactUs = () => {
               <p>support@edoubleone.net</p>
             </div>
           </div>
-          <form className="flex flex-col items-start gap-[20px] text-white">
+          <form className=" w-full flex flex-col items-start gap-[20px] text-white">
             <h2 className="text-[24px] font-[700] leading-[143%] mb-4">
               Send a message
             </h2>
             <input
-              className="bg-[#838394] w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full  md:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               type="text"
               placeholder="Name"
             />
             <input
-              className="bg-[#838394] w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full  md:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               type="Email"
               placeholder="Name"
             />
             <textarea
-              className="bg-[#838394] w-[350px] min-h-[200px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full  md:w-[350px] min-h-[200px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               placeholder="Your Message"
               name=""
               cols="30"

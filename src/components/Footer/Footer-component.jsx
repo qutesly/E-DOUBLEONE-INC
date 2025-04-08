@@ -3,7 +3,7 @@ import React from "react";
 const FooterComponent = () => {
   return (
     <div className="w-full  relative text-white pb-32">
-      <div className="w-full flex items-start gap-[19px] justify-between px-10 md:px-40 py-10">
+      <div className="w-full flex flex-col md:flex-row items-start gap-[19px] justify-between px-10 md:px-40 py-10">
         <div className="flex flex-col items-start gap-[19px] justify-between">
           <img src="./images/Edoubleone-logo-1.png" alt="" />
           <p className="w-[311px]">

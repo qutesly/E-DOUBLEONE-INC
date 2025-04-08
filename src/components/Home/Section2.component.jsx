@@ -8,8 +8,8 @@ const Section2Component = () => {
         <img src="./images/Background-Pattern (2).png" alt="" />
       </div>
       <div className="w-full flex justify-center items-center m-auto text-white z-50">
-        <div className="flex items-center justify-between mt-[120px] gap-5">
-          <div className="w-[400px]">
+        <div className=" flex-col md:flex-row flex items-center justify-between mt-[120px] gap-5">
+          <div className="w-full md:w-[400px] flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-[64px] font-[900]">Project title</h1>
             <button className="bg-[#2A3187] px-4 py-2 w-[100px] text-[12px] rounded-md mb-2 z-50">
               Mobile App
@@ -18,12 +18,13 @@ const Section2Component = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               corporis, sit quis laborum consequatur expedita labore!
             </p>
-            <CustomButton title="Visit Project" className="w-[30px]" />
+            <CustomButton title="Visit Project" className="mb-8" />
           </div>
-          <img className="z-50" src="./images/iPhone.png" alt="" />
           <div className="">
+          <img className="z-50" src="./images/iPhone.png" alt="" />
+
             <img
-              className="absolute hidden md:block top-[50%] right-[150px] translate-[50%]"
+              className="absolute hidden lg:block top-[50%] right-[150px] translate-[50%]"
               src="./images/arrow-circle-right.png"
               alt=""
             />

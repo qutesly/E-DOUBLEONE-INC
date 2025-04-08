@@ -12,8 +12,8 @@ const CardComponent = () => {
           reiciendis, obcaecati corporis aspernatur aperiam. Atque, tempore eos.
         </p>
         <div className="flex gap-[8px]">
-          <CustomButton title="Mobile App" />
-          <CustomButton title="Website" />
+          <CustomButton title="Mobile App" className="hidden xl:block" />
+          <CustomButton title="Website" className="hidden xl:block" />
           <CustomButton title="SaaS" />
         </div>
       </div>
