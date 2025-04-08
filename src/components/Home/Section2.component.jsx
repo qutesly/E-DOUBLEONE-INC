@@ -20,13 +20,13 @@ const Section2Component = () => {
             </p>
             <CustomButton title="Visit Project" className="w-[30px]" />
           </div>
+          <img className="z-50" src="./images/iphone.png" alt="" />
           <div className="z-50">
-            <img className="z-50" src="./images/iphone.png" alt="" />
-            {/* <img
+            <img
               className="absolute hidden md:block top-[50%] right-[150px] translate-[50%]"
               src="./images/arrow-circle-right.png"
               alt=""
-            /> */}
+            />
           </div>
         </div>
       </div>
