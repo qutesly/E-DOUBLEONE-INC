@@ -21,7 +21,7 @@ const Section1Component = () => {
       </div>
       <div className="flex items-center justify-center relative z-30">
         <img src="./images/Union.png" alt="" />
-        <img className="absolute top-[5px] right-[150px]" src="./images/arrow-circle-right.png" alt="" />
+        <img className="absolute top-[10px] right-[150px]" src="./images/arrow-circle-right.png" alt="" />
       </div>
       <div className="w-full h-[150px] absolute left-0 right-0 bottom-0 z-50 bg-gradient-to-t from-[#3A4CBA] "></div>
     </div>
