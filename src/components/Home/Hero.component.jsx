@@ -4,7 +4,7 @@ const HeroComponent = () => {
   return (
     <div className="w-full mt-20">
       <div className="relative px-10 md:px-40  flex flex-col text-white">
-        <div className="absolute top-[-270px] right-[0] z-[-10]">
+        <div className="absolute top-[-276px] right-[0] z-[-10]">
           <img
             src="./images/Background-Pattern.png"
             alt=""

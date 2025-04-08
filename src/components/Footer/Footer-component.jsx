@@ -3,7 +3,7 @@ import React from "react";
 const FooterComponent = () => {
   return (
     <div className="w-full  relative text-white pb-32">
-      <div className="w-full border flex items-start gap-[19px] justify-between px-10 md:px-40 py-10">
+      <div className="w-full flex items-start gap-[19px] justify-between px-10 md:px-40 py-10">
         <div className="flex flex-col items-start gap-[19px] justify-between">
           <img src="./images/Edoubleone-logo-1.png" alt="" />
           <p className="w-[311px]">
@@ -33,8 +33,8 @@ const FooterComponent = () => {
         </div>
       </div>
 
-      <div className="w-full absolute bottom-[0] left-[0] -z-10 -mt-10">
-        <img className="border" src="./images/Footer-Background-Pattern.png" alt="" />
+      <div className=" w-full absolute bottom-[0] left-[0] -z-10 -mt-10">
+        <img src="./images/Footer-Background-Pattern.png" alt="" />
         {/* <img src="./images/stars.png" alt="" /> */}
       </div>
     </div>

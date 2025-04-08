@@ -20,7 +20,7 @@ const Section2Component = () => {
             </p>
             <CustomButton title="Visit Project" className="w-[30px]" />
           </div>
-          <div>
+          <div className="w-full">
             <img src="./images/iphone.png" alt="" />
             <img
               className="absolute  hidden md:block top-[50%] right-[150px] translate-[50%]"

@@ -4,8 +4,8 @@ import NavLinks from "./Navlinks";
 
 const Navbar = () => {
   return (
-    <div className="w-full md:-[1500px] px-36 py-20 m-auto">
-      <div className="w-full p-4 bg-[] flex items-center justify-between">
+    <div className="w-full md:-[1500px] px-36 py-10 m-auto">
+      <div className="w-full p-4 flex items-center justify-between">
         <img
           src="./images/Edoubleone-logo-1.png"
           alt="Edoubleone logo"
