@@ -19,7 +19,7 @@ const Section1Component = () => {
         </p>
         <CustomButton title="View website" />
       </div>
-      <div className="w-full flex items-center justify-center relative z-30">
+      <div className="flex items-center justify-center relative z-30">
         <img src="./images/Union.png" alt="" />
         <img className="absolute top-[5px] right-[150px]" src="./images/arrow-circle-right.png" alt="" />
       </div>
