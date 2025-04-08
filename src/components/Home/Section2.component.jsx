@@ -7,7 +7,7 @@ const Section2Component = () => {
       <div className="absolute top-[0] left-[0] -z-10">
         <img src="./images/Background-Pattern (2).png" alt="" />
       </div>
-      <div className="w-full flex justify-center items-center border m-auto text-white z-50">
+      <div className="w-full flex justify-center items-center m-auto text-white z-50">
         <div className="flex items-center justify-between mt-[120px] gap-5">
           <div className="w-[400px]">
             <h1 className="text-[64px] font-[900]">Project title</h1>
@@ -22,11 +22,11 @@ const Section2Component = () => {
           </div>
           <div className="z-50">
             <img className="z-50" src="./images/iphone.png" alt="" />
-            <img
+            {/* <img
               className="absolute hidden md:block top-[50%] right-[150px] translate-[50%]"
               src="./images/arrow-circle-right.png"
               alt=""
-            />
+            /> */}
           </div>
         </div>
       </div>
