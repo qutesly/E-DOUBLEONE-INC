@@ -3,8 +3,8 @@ import CustomButton from "./Custom-button";
 
 const ContactUs = () => {
   return (
-    <div className="w-full h-full relative flex items-center justify-center mb-0 md:mb-[333px] p-8">
-      <div className="w-[900px] h-full p-[1px] bg-gradient-to-tl from-black to-white rounded-2xl mt-[10rem] ">
+    <div className="w-full h-full relative flex items-center justify-center mb-0 md:mb-[333px] p-10">
+      <div className="w-[1000px] h-full p-[1px] bg-gradient-to-tl from-black to-white rounded-2xl mt-[20rem]">
         <div className="w-full  flex flex-col lg:flex-row items-start justify-between py-10 px-12 bg-[#283082] rounded-2xl text-white">
           <div className="w-full flex flex-col items-start mb-4 lg:mb-0">
             <h2 className="text-[24px] font-[700] leading-[143%] mb-4">
@@ -49,7 +49,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="absolute top-[16px] left-[0] -z-10">
+      <div className="absolute top-[0] left-[0] -z-10">
         <img src="./images/Background-Pattern(3).png" alt="" />
       </div>
       <div className="absolute top-[45px] left-[0] -z-10">
