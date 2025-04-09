@@ -3,8 +3,8 @@ import CustomButton from "./Custom-button";
 
 const Section2Component = () => {
   return (
-    <div className="w-full h-full relative px-8  m-auto">
-      <div className="absolute top-[0] left-[0] -z-10">
+    <div className="w-full h-full relative px-8  m-auto z-[100]">
+      <div className="absolute top-[0] left-[0] -z-20">
         <img src="./images/Background-Pattern (2).png" alt="" />
       </div>
       <div className="w-full flex justify-center items-center m-auto text-white z-50">

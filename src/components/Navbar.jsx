@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-20 py-10">
+    <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-20 py-10 ">
       <div className="flex flex-wrap items-center justify-between gap-4 relative">
         {/* Logo */}
         <img
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div
           className={`
             fixed md:static top-0 right-0
-            w-[30rem] md:w-auto h-full md:h-auto
+            w-64 md:w-auto h-full md:h-auto
             flex flex-col md:flex-row items-start md:items-center
             bg-[#283082] md:bg-transparent text-white z-[100]
             transition-transform duration-300 ease-in-out
@@ -38,11 +38,11 @@ const Navbar = () => {
           </div>
   
           {/* Navigation links */}
-          <ul className="flex flex-col md:flex-row w-full md:w-auto h-full md:h-auto mt-12 md:mt-0">
-            {["Home", "About us", "Services", "Our work", "Contact us"].map((item, index) => (
+          <ul className="flex border flex-col md:flex-row w-full md:w-auto h-full md:h-auto mt-12 md:mt-0">
+            {["Home", "About", "Services", "Portfolio", "Contact us", "Blog"].map((item, index) => (
               <li
                 key={index}
-                className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-8 py-10 md:px-2 md:py-2 border-b md:border-none flex items-center"
+                className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-8 py-10 md:px-4 md:py-2 border-b md:border-none flex items-center"
               >
                 {item === "Services" ? (
                   <>
