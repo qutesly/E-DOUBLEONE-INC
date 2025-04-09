@@ -10,18 +10,23 @@ const Section2Component = () => {
       <div className="w-full flex justify-center items-center m-auto text-white z-50">
         <div className=" flex-col md:flex-row flex items-center justify-between mt-[120px] gap-5">
           <div className="w-full md:w-[400px] flex flex-col items-center md:items-start text-center md:text-left">
-            <h1 className="text-[64px] font-[900]">Project title</h1>
+            <h1 className="text-[34px] lg:text-[60px] font-[900]">
+              About Edoubleone
+            </h1>
             <button className="bg-[#2A3187] px-4 py-2 w-[100px] text-[12px] rounded-md mb-2 z-50">
               Mobile App
             </button>
-            <p className="text-[24px] z-50 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              corporis, sit quis laborum consequatur expedita labore!
+            <p className="text-[18px] lg:text-[24px] z-50 mb-4">
+              Introduction to the Best Digital Agency At Edoubleone, we
+              specialize in cost-effective, scalable software solutions that
+              grow with your business. Whether you’re launching a startup or
+              scaling up, we ensure your digital products are built to handle
+              increasing demand with ease and efficiency.
             </p>
-            <CustomButton title="Visit Project" className="mb-8" />
+            <CustomButton title="Visit Project" className="mb-8 z-[100]" />
           </div>
           <div className="">
-          <img className="z-50" src="./images/iPhone.png" alt="" />
+            <img className="z-50" src="./images/iPhone.png" alt="" />
 
             <img
               className="absolute hidden lg:block top-[50%] right-[150px] translate-[50%]"
