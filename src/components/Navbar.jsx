@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
   
           {/* Navigation links */}
-          <ul className="flex border flex-col md:flex-row w-full md:w-auto h-full md:h-auto mt-12 md:mt-0">
+          <ul className="flex flex-col md:flex-row w-full md:w-auto h-full md:h-auto mt-12 md:mt-0">
             {["Home", "About", "Services", "Portfolio", "Contact us", "Blog"].map((item, index) => (
               <li
                 key={index}

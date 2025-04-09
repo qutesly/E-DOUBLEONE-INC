@@ -9,7 +9,7 @@ const HeroComponent = () => {
 
   return (
     <div className="w-full h-[80vh]">
-      <div className="relative h-full px-10 md:px-40  flex flex-col text-white">
+      <div className="relative h-full px-10 md:px-40  flex  flex-col text-white">
         <div className="hidden w-[2000.98px] h-[1000.98px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
           <img
             data-aos="zoom-in-down"

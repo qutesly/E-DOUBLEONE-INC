@@ -3,6 +3,10 @@ import CardComponent from "./Card.component";
 
 const Section3Component = () => {
 
+  const images = [
+    './images/oversabi-project.png'
+  ]
+
   return (
     <div className="relative">
       <div className="absolute top-[700px] left-[0] -z-10">
@@ -13,7 +17,7 @@ const Section3Component = () => {
           More Projects From our Archive
         </h1>
         <div className="grid grid-cols-2 gap-10">
-        <CardComponent title="Ejiro’s Kitchen" href="https://www.ejirokitchen.com/"/>
+        <CardComponent title="Ejiro’s Kitchen" href="https://www.ejirokitchen.com/" images={images}/>
         <CardComponent title={`First Class Financial`.slice(0, 15)} href="http://firstclassfinserve.com/" />
         <CardComponent title="Roaders Map" href="https://roadersmap.com/" />
         <CardComponent title="Project title" />
