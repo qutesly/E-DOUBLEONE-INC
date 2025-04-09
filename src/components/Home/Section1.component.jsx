@@ -17,9 +17,9 @@ const Section1Component = () => {
   return (
     <div className="w-full  h-full relative pt-[10rem] px-8">
       <div className="w-full absolute inset-0 bg-gradient-to-b from-black/30  z-10"></div>
-      <div className=" w-[1960.98px]  hidden xl:block absolute top-[0] right-[0] -z-50">
+      <div className=" w-[1960.98px] h-[800px] hidden xl:block absolute top-[0] right-[0] -z-50">
         <img
-          className="w-full"
+          className="w-full h-full"
           src="./images/Top-Background-Pattern.png"
           alt=""
           data-aos="zoom-in-up"
@@ -54,16 +54,16 @@ const Section1Component = () => {
             data-aos="zoom-in-up"
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%]">
-          {
+          {/* {
             photos.map((src, id) => {
               <img key={id} src={src} data-aos={id % 2 === 0 ? 'fade-right' : 'fade-left'} />
             })
-          }
-            {/* <img
+          } */}
+            <img
             className="w-full h-full"
             src="./images/genzee-img.png"
             alt="" 
-          /> */}
+          />
           </div>
           
         </div>
