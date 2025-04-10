@@ -3,35 +3,63 @@ import CustomButton from "./Custom-button";
 
 const Section2Component = () => {
   return (
-    <div className="w-full h-full relative px-8  m-auto z-[100]">
-      <div className="absolute top-[0] left-[0] -z-20">
-        <img src="./images/Background-Pattern (2).png" alt="" />
+    <div className="w-full h-full relative px-6 sm:px-8 mx-auto z-[100] overflow-hidden">
+      {" "}
+      {/* ✅ Prevents overflow */}
+      {/* Background Pattern */}
+      <div className="absolute top-0 left-0 -z-20 w-full">
+        <img
+          src="./images/Background-Pattern (2).png"
+          alt=""
+          className="w-full object-cover"
+        />
       </div>
-      <div className=" flex justify-center items-center m-auto text-white z-50 ">
-        <div className="w-full relative flex-col md:flex-row flex items-center justify-center mt-[70px] md:mt-[120px] gap-5">
-          <div className="absolute -bottom-10 w-full md:w-[500px] md:relative flex flex-col items-center md:items-start text-center md:text-left z-[100]">
-          <button className="bg-[#2A3187] block md:hidden px-4 py-2 w-[100px] text-[12px] rounded-md mb-2 z-50">
+      {/* Main Content */}
+      <div className="flex justify-center items-center mx-auto text-white z-50">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center mt-[70px] md:mt-[120px] gap-10 md:gap-5 px-2">
+          {" "}
+          {/* ✅ Better spacing and padding */}
+          {/* Left Content */}
+          <div className="relative md:static flex flex-col items-center md:items-start text-center md:text-left max-w-[500px] z-[100]">
+            {/* Mobile App Button - Mobile */}
+            <button className="bg-[#2A3187] md:hidden px-4 py-2 text-[12px] rounded-md mb-2">
               Mobile App
             </button>
-            <h1 className="text-[34px] lg:text-[60px] font-[900] leading-[100%] mb-6 z-[100]">
+
+            {/* Title */}
+            <h1 className="text-[28px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words">
+              {" "}
+              {/* ✅ break-words prevents overflow */}
               Roader’s Map
             </h1>
-            <button className="bg-[#2A3187] hidden md:block px-4 py-2 w-[100px] text-[12px] rounded-md mb-2 z-50">
+
+            {/* Mobile App Button - Desktop */}
+            <button className="bg-[#2A3187] hidden md:inline-block px-4 py-2 text-[12px] rounded-md mb-4">
               Mobile App
             </button>
-            <p className="text-[18px] lg:text-[24px] z-[100] mb-4">
+
+            {/* Description */}
+            <p className="text-[16px] sm:text-[18px] lg:text-[24px] mb-4 leading-[1.4] break-words">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               ipsum arcu, posuere nec dolor ac, feugiat dictum urna.
             </p>
-            <CustomButton title="Visit Project" className="mb-8 z-[100]" />
+
+            {/* CTA Button */}
+            <CustomButton title="Visit Project" className="mb-6" />
           </div>
-          <div className="w-[300px] md:w-[368px] px-4">
-            <img className="w-full " src="./images/iPhone.png" alt="" />
+          {/* Right Image */}
+          <div className="md:max-w-none px-2">
+            <img
+              className="w-full object-contain"
+              src="./images/iPhone.png"
+              alt="iPhone preview"
+            />
           </div>
         </div>
       </div>
-      <div className="w-full md:hidden h-[400px] absolute left-0 right-0 bottom-0 z-50 bg-gradient-to-t from-[#17223E] "></div>
-      <div className="w-full hidden md:inline-block h-[100px] absolute left-0 right-0 bottom-0 z-50 bg-gradient-to-t from-[#3A4CBA] "></div>
+      {/* Gradient Backgrounds */}
+      <div className="w-full md:hidden h-[400px] absolute bottom-0 left-0 right-0 z-50 bg-gradient-to-t from-[#17223E]"></div>
+      <div className="w-full hidden md:block h-[100px] absolute bottom-0 left-0 right-0 z-50 bg-gradient-to-t from-[#3A4CBA]"></div>
     </div>
   );
 };
