@@ -18,8 +18,8 @@ const CardComponent = ({ title, details, src, href, ...props  }) => {
 
       {/* ✅ Button group aligned and wrapped correctly */}
       <div className="flex flex-wrap gap-3 mt-auto">
-        <CustomButton title="Mobile App" className="hidden xl:block" />
-        <CustomButton title="Website" className="hidden xl:block" />
+        {/* <CustomButton title="Mobile App" className="hidden xl:block" /> */}
+        {/* <CustomButton title="Website" className="hidden xl:block" /> */}
         <CustomButton title="View website" href={href} />
       </div>
     </div>

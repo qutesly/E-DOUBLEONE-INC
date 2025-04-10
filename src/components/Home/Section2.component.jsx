@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CustomButton from "./Custom-button";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Section2Component = () => {
+
+  useEffect(()=> {
+    Aos.init({duration: 3000})
+  },[])
+
   return (
     <div className="w-full h-full relative px-6 sm:px-8 mx-auto z-[100] overflow-hidden">
       {" "}
@@ -27,7 +34,7 @@ const Section2Component = () => {
             </button>
 
             {/* Title */}
-            <h1 className="text-[20px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words">
+            <h1 className="text-[20px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words" data-aos="slide-down">
               {" "}
               {/* ✅ break-words prevents overflow */}
               Roader’s Map
@@ -48,7 +55,7 @@ const Section2Component = () => {
             <CustomButton title="Visit Project" className="mb-6" href="https://roadersmap.com/" />
           </div>
           {/* Right Image */}
-          <div className="md:max-w-none px-2">
+          <div className="md:max-w-none px-2" data-aos="zoom-in-right">
             <img
               className="w-full object-contain"
               src="./images/iPhone.png"

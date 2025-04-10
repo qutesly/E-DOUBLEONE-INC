@@ -52,7 +52,7 @@ const Section1Component = () => {
   };
 
   return (
-    <div className="w-full h-full relative pt-[2rem] md:pt-[10rem] px-8 overflow-hidden">
+    <div className="w-full h-full relative pt-[2rem] md:pt-[10rem] px-6 overflow-hidden">
       <div className="w-full absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
 
       <div className="w-[630.03px] lg:w-[1960.98px] h-[800px] xl:block absolute top-[0] right-[0] -z-50">
@@ -74,7 +74,7 @@ const Section1Component = () => {
         >
           Genzee Real Estate
         </h1>
-        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap">
+        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap" data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
           arcu, posuere nec dolor ac, feugiat
         </p>
@@ -101,17 +101,20 @@ const Section1Component = () => {
         </button>
 
         {/* Image container with Union bg */}
-        <div className="w-[400px] md:w-[1114px] relative flex items-center justify-center">
-          <img
-            className="w-full h-[]"
+        <div className="w-[390px] h-full md:w-[1114px] relative flex items-center justify-center">
+          <div className="w-full h-[310px] md:h-full">
+            <img
+            className="w-full h-full object-fill "
             src="./images/Union.png"
             alt=""
             data-aos="zoom-in-up"
           />
-          <div className="absolute h-full top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-2 md:px-8 pt-2 md:pt-8 overflow-hidden">
+          </div>
+          
+          <div className="absolute h-[280px] md:h-full top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <img
               key={current}
-              className="w-full h-full object-contain rounded-lg "
+              className="w-full h-full object-fill rounded-lg "
               src={photos[current]}
               alt=""
               data-aos={current % 2 === 0 ? "slide-right" : "slide-left"}
