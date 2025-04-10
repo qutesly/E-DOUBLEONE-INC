@@ -102,7 +102,7 @@ const Section1Component = () => {
 
         {/* Image container with Union bg */}
         <div className="w-full md:w-[1114px] relative flex items-center justify-center">
-          <div className="w-[450px] md:w-full h-[250px] md:h-full">
+          <div className="w-[400px] md:w-full h-[200px] md:h-full">
             <img
             className="w-full h-full object-fill "
             src="./images/Union.png"
@@ -111,7 +111,7 @@ const Section1Component = () => {
           />
           </div>
           
-          <div className="absolute w-[100%] h-[210px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
+          <div className="absolute w-[100%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <img
               key={current}
               className="w-full h-full object-fill rounded-lg "
