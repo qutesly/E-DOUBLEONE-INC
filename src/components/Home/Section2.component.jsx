@@ -27,7 +27,7 @@ const Section2Component = () => {
             </button>
 
             {/* Title */}
-            <h1 className="text-[28px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words">
+            <h1 className="text-[20px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words">
               {" "}
               {/* ✅ break-words prevents overflow */}
               Roader’s Map
@@ -39,13 +39,13 @@ const Section2Component = () => {
             </button>
 
             {/* Description */}
-            <p className="text-[16px] sm:text-[18px] lg:text-[24px] mb-4 leading-[1.4] break-words">
+            <p className="text-[12px] sm:text-[18px] text-[#B4BEFF] lg:text-[24px] mb-4 leading-[1.4] break-words">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               ipsum arcu, posuere nec dolor ac, feugiat dictum urna.
             </p>
 
             {/* CTA Button */}
-            <CustomButton title="Visit Project" className="mb-6" />
+            <CustomButton title="Visit Project" className="mb-6" href="https://roadersmap.com/" />
           </div>
           {/* Right Image */}
           <div className="md:max-w-none px-2">

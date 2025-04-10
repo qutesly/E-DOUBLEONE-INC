@@ -22,7 +22,7 @@ const Navbar = () => {
             fixed md:static top-0 right-0
             w-64 md:w-auto h-full md:h-auto
             flex flex-col md:flex-row items-start md:items-center
-            bg-[#283082] md:bg-transparent text-white z-[100]
+            bg-[#283082] md:bg-transparent text-white z-[500]
             transition-transform duration-300 ease-in-out
             ${menuOpen ? 'translate-x-0' : 'translate-x-full'}
             md:translate-x-0

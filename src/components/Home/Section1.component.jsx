@@ -69,12 +69,12 @@ const Section1Component = () => {
           Website
         </button>
         <h1
-          className="text-[28px] lg:text-[60px] leading-[100%] font-[900]"
-          data-aos="zoom-in-up"
+          className="text-[20px] lg:text-[60px] leading-[100%] font-[900]"
+          data-aos="slide-left"
         >
           Genzee Real Estate
         </h1>
-        <p className="text-[14px] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap">
+        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
           arcu, posuere nec dolor ac, feugiat
         </p>
@@ -103,12 +103,12 @@ const Section1Component = () => {
         {/* Image container with Union bg */}
         <div className="w-[400px] md:w-[1114px] relative flex items-center justify-center">
           <img
-            className="w-full"
+            className="w-full h-[]"
             src="./images/Union.png"
             alt=""
             data-aos="zoom-in-up"
           />
-          <div className="absolute top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-2 md:px-8 pt-2 md:pt-8 overflow-hidden">
+          <div className="absolute h-full top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-2 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <img
               key={current}
               className="w-full h-full object-contain rounded-lg "

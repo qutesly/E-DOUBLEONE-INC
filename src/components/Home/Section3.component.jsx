@@ -19,7 +19,7 @@ const Section3Component = () => {
   </div>
 
   <div className="flex flex-col text-white mt-[3rem] md:mt-[10rem] px-6 sm:px-10 md:px-20 lg:px-40 mb-5 z-50">
-    <h1 className="text-[34px] lg:text-[60px] font-[900] text-start leading-[36px] md:leading-[75px] mt-8 mb-4 w-full max-w-[606px]">
+    <h1 className="text-[20px] lg:text-[60px] font-[900] text-start leading-[36px] md:leading-[75px] mt-8 mb-4 w-full max-w-[606px]">
       More Projects From our Archive
     </h1>
 
@@ -27,42 +27,42 @@ const Section3Component = () => {
       {/** Example of one refactored card: */}
       <CardComponent
         title="OverSabi Nurse"
-        href="https://www.ejirokitchen.com/"
+        href="https://oversabinurse.com/"
         src="./images/oversabi-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="slide-right"
       />
       <CardComponent
         title="Genzee Real Estate"
-        href="http://firstclassfinserve.com/"
+        href="/"
         src="./images/genzee-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="slide-left"
       />
       <CardComponent
         title="Ejiro's Kitchen"
-        href="https://roadersmap.com/"
+        href="https://www.ejirokitchen.com/"
         src="./images/ejiro-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="fade-down-left"
       />
       <CardComponent
         title="First Class Financial"
-        href=""
+        href="http://firstclassfinserve.com/"
         src="./images/first-class-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="fade-down-right"
       />
       <CardComponent
         title="Memscepter"
-        href=""
+        href="/"
         src="./images/memscepter-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="zoom-in-left"
       />
       <CardComponent
         title="Summit Alliance"
-        href=""
+        href="/"
         src="./images/summit-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="zoom-in-right"

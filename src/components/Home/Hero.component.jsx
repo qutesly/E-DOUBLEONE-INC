@@ -35,11 +35,11 @@ const HeroComponent = () => {
             </span>{" "}
           </h1>
             
-            <h1 className="text-[24px] md:text-[60px] leading-[110%] font-[500] mb-4" data-aos="slide-right" >
+            <h1 className="text-[18px] md:text-[60px] leading-[110%] font-[500] mb-4" data-aos="slide-right" >
             Explore Our Portfolio
           </h1>
 
-          <p className="w-full text-[14px] md:text-[20px] font-[400] leading-[157%] lg:w-[709px] mb-4 md:mb-0">
+          <p className="w-full text-[12px] text-[#B4BEFF] md:text-[20px] font-[400] leading-[157%] lg:w-[709px] mb-4 md:mb-0">
             We are a software solutions company based in Maryland, USA, with a
             globally distributed team of experts. Since 2015, we’ve helped over
             500 happy clients achieve their digital goals by delivering
