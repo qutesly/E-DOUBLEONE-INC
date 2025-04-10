@@ -55,7 +55,7 @@ const Section1Component = () => {
     <div className="w-full h-full relative pt-[2rem] md:pt-[10rem] px-6 overflow-hidden">
       <div className="w-full absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
 
-      <div className="w-[630.03px] lg:w-[1960.98px] h-[800px] xl:block absolute top-[0] right-[0] -z-50">
+      <div className="w-[630.03px] lg:w-[1855px] h-[700px] xl:block absolute top-[0] right-[0] -z-50">
         <img
           className="w-full h-full"
           src="./images/Top-Background-Pattern.png"
@@ -69,12 +69,12 @@ const Section1Component = () => {
           Website
         </button>
         <h1
-          className="text-[20px] lg:text-[60px] leading-[100%] font-[900]"
+          className="text-[20px] lg:text-[56px] leading-[100%] font-[900]"
           data-aos="slide-left"
         >
           Genzee Real Estate
         </h1>
-        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap" data-aos="fade-up">
+        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[18px] mb-4 flex flex-wrap" data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
           arcu, posuere nec dolor ac, feugiat
         </p>

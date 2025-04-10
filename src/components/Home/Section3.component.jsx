@@ -19,7 +19,7 @@ const Section3Component = () => {
   </div>
 
   <div className="flex flex-col text-white mt-[3rem] md:mt-[5rem] px-6 sm:px-10 md:px-20 lg:px-40 mb-5 z-50">
-    <h1 className="text-[30px] lg:text-[58px] font-[900] text-start leading-[40px] md:leading-[60px] mt-8 mb-4 w-full max-w-[300px] md:max-w-[606px]">
+    <h1 className="text-[30px] lg:text-[56px] font-[900] text-start leading-[40px] md:leading-[60px] mt-8 mb-4 w-full max-w-[300px] md:max-w-[606px]">
       More Projects From our Archive
     </h1>
 

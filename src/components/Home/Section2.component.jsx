@@ -34,7 +34,7 @@ const Section2Component = () => {
             </button>
 
             {/* Title */}
-            <h1 className="text-[20px] sm:text-[34px] lg:text-[60px] font-[900] leading-tight mb-4 break-words" data-aos="slide-down">
+            <h1 className="text-[20px] sm:text-[34px] lg:text-[56px] font-[900] leading-tight mb-4 break-words" data-aos="slide-down">
               {" "}
               {/* ✅ break-words prevents overflow */}
               Roader’s Map

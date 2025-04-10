@@ -11,7 +11,7 @@ const HeroComponent = () => {
   return (
     <div className="w-full h-full md:h-[80vh]">
       <div className="relative h-full px-10 md:px-40  flex  flex-col text-white">
-        <div className="w-[640.03px] lg:w-[2000px] h-[810px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
+        <div className="w-[640.03px] lg:w-[1900px] h-[810px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
           <img
             data-aos="zoom-in-down"
             className="w-full h-full "
@@ -24,7 +24,7 @@ const HeroComponent = () => {
         </div>
         <div className="w-full h-full mb-5 z-10 flex items-start justify-center flex-col">
           <h1
-            className="text-[24px] md:text-[58px] font-[500]  leading-[110%] "
+            className="text-[24px] md:text-[56px] font-[500]  leading-[110%] "
             data-aos="slide-right"
           >
             We create{" "}
