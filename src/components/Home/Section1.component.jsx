@@ -74,7 +74,10 @@ const Section1Component = () => {
         >
           Genzee Real Estate
         </h1>
-        <p className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[18px] mb-4 flex flex-wrap" data-aos="fade-up">
+        <p
+          className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[18px] mb-4 flex flex-wrap"
+          data-aos="fade-up"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
           arcu, posuere nec dolor ac, feugiat
         </p>
@@ -104,21 +107,25 @@ const Section1Component = () => {
         <div className="w-full md:w-[1114px] relative flex items-center justify-center">
           <div className="w-[400px] md:w-full h-[200px] md:h-full">
             <img
-            className="w-full h-full object-fill "
-            src="./images/Union.png"
-            alt=""
-            data-aos="zoom-in-up"
-          />
-          </div>
-          
-          <div className="absolute w-[100%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
-            <img
-              key={current}
-              className="w-full h-full object-fill rounded-lg "
-              src={photos[current]}
+              className="w-full h-full object-fill"
+              src="./images/Union.png"
               alt=""
-              data-aos={current % 2 === 0 ? "slide-right" : "slide-left"}
+              data-aos="zoom-in-up"
             />
+          </div>
+
+          <div className="absolute w-[80%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
+            <div className="mb-4 md:mb-8">
+              {" "}
+              {/* Add margin bottom */}
+              <img
+                key={current}
+                className="w-full h-full object-fill rounded-lg"
+                src={photos[current]}
+                alt=""
+                data-aos={current % 2 === 0 ? "slide-right" : "slide-left"}
+              />
+            </div>
           </div>
         </div>
 
