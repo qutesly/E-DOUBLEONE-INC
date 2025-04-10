@@ -13,7 +13,7 @@ const CardComponent = ({ title, details, src, href, ...props  }) => {
       {...props}
     >
       <img className="w-full rounded-xl" src={src} alt={title} />
-      <h2 className="text-[20px] font-[900]">{title}</h2>
+      <h2 className="text-[20px] -mb-[8px] font-[900]">{title}</h2>
       <p className="text-[12px] md:text-[18px] text-[#B4BEFF] font-[400] leading-[15px] md:leading-[22px]">{details}</p>
 
       {/* ✅ Button group aligned and wrapped correctly */}

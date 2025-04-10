@@ -4,7 +4,7 @@ const FooterComponent = () => {
   return (
     <div className="w-full relative text-white pb-32 overflow-hidden"> {/* ✅ Prevents overflow */}
     {/* Content Section */}
-    <div className="w-full flex flex-col md:flex-row items-start justify-between gap-10 px-6 sm:px-10 md:px-40 py-10">
+    <div className="w-full  flex flex-col md:flex-row items-start justify-between gap-10 px-6 sm:px-10 md:px-40 py-10">
       
       {/* Left Column */}
       <div className="flex flex-col items-start gap-5 max-w-full md:max-w-[311px]">
