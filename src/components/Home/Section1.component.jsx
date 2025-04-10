@@ -82,7 +82,7 @@ const Section1Component = () => {
       </div>
 
       {/* Image slider area */}
-      <div className="flex items-center justify-between z-30 relative">
+      <div className="flex items-center justify-between gap-4 z-30 relative">
         {/* Prev Button */}
         <button
           onClick={prevImage}
@@ -101,8 +101,8 @@ const Section1Component = () => {
         </button>
 
         {/* Image container with Union bg */}
-        <div className="w-[390px] h-full md:w-[1114px] relative flex items-center justify-center">
-          <div className="w-full h-[310px] md:h-full">
+        <div className="w-full md:w-[1114px] relative flex items-center justify-center">
+          <div className="w-[330px] md:w-full h-[300px] md:h-full">
             <img
             className="w-full h-full object-fill "
             src="./images/Union.png"
@@ -111,7 +111,7 @@ const Section1Component = () => {
           />
           </div>
           
-          <div className="absolute h-[280px] md:h-full top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
+          <div className="absolute w-[100%] h-[280px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <img
               key={current}
               className="w-full h-full object-fill rounded-lg "

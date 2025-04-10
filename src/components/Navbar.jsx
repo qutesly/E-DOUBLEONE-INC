@@ -47,7 +47,7 @@ const Navbar = () => {
         >
           {/* Close button - visible on mobile */}
           <div
-            className="absolute top-6 left-4 md:hidden text-3xl cursor-pointer"
+            className="absolute top-4 left-2 md:hidden text-3xl cursor-pointer"
             onClick={() => setMenuOpen(false)}
           >
             <CloseIcon />
@@ -66,6 +66,7 @@ const Navbar = () => {
               <li
                 key={index}
                 className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-8 py-10 md:px-4 md:py-2 border-b md:border-none flex items-center cursor-pointer"
+                data-aos="zoom-out-right"
               >
                 {item === "Services" ? (
                   <>
