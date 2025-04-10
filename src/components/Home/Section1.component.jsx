@@ -114,7 +114,7 @@ const Section1Component = () => {
             />
           </div>
 
-          <div className="absolute w-[80%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
+          <div className="absolute w-[100%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <div className="mb-4 md:mb-8">
               {" "}
               {/* Add margin bottom */}
