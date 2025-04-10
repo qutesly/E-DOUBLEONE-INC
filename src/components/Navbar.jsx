@@ -1,10 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CustomButton from "./Home/Custom-button";
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import CloseIcon from '@mui/icons-material/Close';
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {  
+    const body = document?.body;  
+    if (body) {  
+      body.style.overflow = menuOpen ? 'hidden' : 'unset';  
+      body.style.position = menuOpen ? 'fixed' : 'static';  
+      body.style.width = menuOpen ? '100%' : 'auto';  
+    }  
+  
+    return () => {  
+      if (body) {  
+        body.style.overflow = 'unset';  
+        body.style.position = 'static';  
+        body.style.width = 'auto';  
+      }  
+    };  
+  }, [menuOpen]); 
 
   return (
     <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-20 py-10 ">
@@ -15,7 +32,7 @@ const Navbar = () => {
           alt="Edoubleone logo"
           className="w-40 sm:w-48"
         />
-  
+
         {/* Navigation */}
         <div
           className={`
@@ -24,7 +41,7 @@ const Navbar = () => {
             flex flex-col md:flex-row items-start md:items-center
             bg-[#283082] md:bg-transparent text-white z-[500]
             transition-transform duration-300 ease-in-out
-            ${menuOpen ? 'translate-x-0' : 'translate-x-full'}
+            ${menuOpen ? "translate-x-0" : "translate-x-full"}
             md:translate-x-0
           `}
         >
@@ -35,10 +52,17 @@ const Navbar = () => {
           >
             <CloseIcon />
           </div>
-  
+
           {/* Navigation links */}
           <ul className="flex flex-col md:flex-row w-full md:w-auto h-full md:h-auto mt-12 md:mt-0">
-            {["Home", "About", "Services", "Portfolio", "Contact us", "Blog"].map((item, index) => (
+            {[
+              "Home",
+              "About",
+              "Services",
+              "Portfolio",
+              "Contact us",
+              "Blog",
+            ].map((item, index) => (
               <li
                 key={index}
                 className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-8 py-10 md:px-4 md:py-2 border-b md:border-none flex items-center"
@@ -59,9 +83,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-  
+
         <CustomButton title="Get in touch" className="hidden md:inline-block" />
-  
+
         <div
           className="text-4xl text-white block md:hidden cursor-pointer"
           onClick={() => setMenuOpen(true)}
