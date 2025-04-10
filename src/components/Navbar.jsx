@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CustomButton from "./Home/Custom-button";
-// import NavLinks from "./Navlinks";
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';
 

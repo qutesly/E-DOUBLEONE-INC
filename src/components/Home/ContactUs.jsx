@@ -3,14 +3,15 @@ import CustomButton from "./Custom-button";
 
 const ContactUs = () => {
   return (
-    <div className="w-full h-full relative flex items-center justify-center mb-0 md:mb-[333px] p-10">
-      <div className="w-[1000px] h-full p-[1px] bg-gradient-to-tl from-black to-white rounded-2xl mt-[20rem]">
+    <div className="w-full h-full relative flex items-center justify-center mb-0 lg:mb-[333px] p-10">
+      {/* <div className="px-4 w-full "> */}
+      <div className="w-full md:w-[950px] h-full p-[1px]  bg-gradient-to-tl from-black to-white rounded-2xl mt-[4rem] lg:mt-[20rem]">
         <div className="w-full  flex flex-col lg:flex-row items-start justify-between py-10 px-12 bg-[#283082] rounded-2xl text-white">
           <div className="w-full flex flex-col items-start mb-4 lg:mb-0">
             <h2 className="text-[24px] font-[700] leading-[143%] mb-4">
               Get in touch
             </h2>
-            <p className="text-[17px] font-[400] leading-[143%] w-[252px] mb-12">
+            <p className="text-[17px] font-[400] leading-[143%] w-full md:w-[252px] mb-12 flex flex-col">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Consectetur autem quo unde tenetur enim, eius sit quas optio
               dolorem ipsum molestias, mollitia deleniti ipsa?
@@ -21,7 +22,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center gap-[16px]">
               <img src="./images/Email.png" alt="" />
-              <p>support@edoubleone.net</p>
+              <p className="w-full flex flex-col">support@edoubleone.net</p>
             </div>
           </div>
           <form className=" w-full flex flex-col items-start gap-[20px] text-white">
@@ -29,17 +30,17 @@ const ContactUs = () => {
               Send a message
             </h2>
             <input
-              className="bg-[#838394] w-full  md:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full lg:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               type="text"
               placeholder="Name"
             />
             <input
-              className="bg-[#838394] w-full  md:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full lg:w-[350px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               type="Email"
               placeholder="Name"
             />
             <textarea
-              className="bg-[#838394] w-full  md:w-[350px] min-h-[200px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
+              className="bg-[#838394] w-full lg:w-[350px] min-h-[200px] p-3 rounded-2xl border-none outline-none placeholder:text-white placeholder:text-[400]"
               placeholder="Your Message"
               name=""
               cols="30"
@@ -58,6 +59,7 @@ const ContactUs = () => {
       <div className="absolute top-[45px] right-[0] -z-10">
         <img src="./images/vector-bg.png" alt="" />
       </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -52,10 +52,10 @@ const Section1Component = () => {
   };
 
   return (
-    <div className="w-full h-full relative pt-[10rem] px-8 overflow-hidden">
+    <div className="w-full h-full relative pt-[2rem] md:pt-[10rem] px-8 overflow-hidden">
       <div className="w-full absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
 
-      <div className="w-[1960.98px] h-[800px] hidden xl:block absolute top-[0] right-[0] -z-50">
+      <div className="w-[630.03px] lg:w-[1960.98px] h-[800px] xl:block absolute top-[0] right-[0] -z-50">
         <img
           className="w-full h-full"
           src="./images/Top-Background-Pattern.png"
@@ -64,17 +64,17 @@ const Section1Component = () => {
         />
       </div>
 
-      <div className="w-full lg:w-[700px] m-auto flex flex-col items-center justify-center text-white text-center z-50 mb-16">
+      <div className="w-full lg:w-[700px] m-auto flex flex-col flex-wrap items-center md:justify-center text-white text-center z-50 mb-8 md:mb-16">
         <button className="bg-[#2A3187] min-w-[20px] px-4 py-2 text-[12px] rounded-md mb-2 z-50">
           Website
         </button>
         <h1
-          className="text-[34px] lg:text-[60px] leading-[100%] font-[900]"
+          className="text-[28px] lg:text-[60px] leading-[100%] font-[900]"
           data-aos="zoom-in-up"
         >
           Genzee Real Estate
         </h1>
-        <p className="text-[20px] mb-4">
+        <p className="text-[14px] w-full sm:w-full md:w-[654px] md:text-[20px] mb-4 flex flex-wrap">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
           arcu, posuere nec dolor ac, feugiat
         </p>
@@ -91,24 +91,24 @@ const Section1Component = () => {
             current === 0
               ? "opacity-0 cursor-not-allowed"
               : "cursor-pointer hover:opacity-80"
-          }`}
+          } w-[30px] md:w-[64px]`}
         >
           <img
-            className="cursor-pointer"
+            className="cursor-pointer w-full"
             src="./images/arrow-circle-right.png"
             alt="prev arrow"
           />
         </button>
 
         {/* Image container with Union bg */}
-        <div className="w-[70%] relative flex items-center justify-center">
+        <div className="w-[400px] md:w-[1114px] relative flex items-center justify-center">
           <img
             className="w-full"
             src="./images/Union.png"
             alt=""
             data-aos="zoom-in-up"
           />
-          <div className="absolute top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-8 pt-8 overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 w-[100%] aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-2 md:px-8 pt-2 md:pt-8 overflow-hidden">
             <img
               key={current}
               className="w-full h-full object-contain rounded-lg "
@@ -127,17 +127,17 @@ const Section1Component = () => {
             current === photos.length - 1
               ? "opacity-0 cursor-not-allowed"
               : "cursor-pointer hover:opacity-80"
-          }`}
+          } w-[30px] md:w-[64px] `}
         >
           <img
-            className="cursor-pointer"
+            className="cursor-pointer w-full"
             src="./images/arrow-circle-right.png"
             alt="next arrow"
           />
         </button>
       </div>
 
-      <div className="w-full h-[150px] absolute left-0 right-0 bottom-0 z-[100] bg-gradient-to-t from-[#3A4CBA] "></div>
+      <div className="w-full h-[30px] md:h-[100px] absolute left-0 right-0 bottom-0 z-[100] bg-gradient-to-t from-[#3A4CBA] "></div>
     </div>
   );
 };

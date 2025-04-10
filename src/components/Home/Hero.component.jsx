@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CustomButton from "./Custom-button";
 
 const HeroComponent = () => {
   useEffect(() => {
@@ -8,12 +9,12 @@ const HeroComponent = () => {
   });
 
   return (
-    <div className="w-full h-[80vh]">
+    <div className="w-full h-full md:h-[80vh]">
       <div className="relative h-full px-10 md:px-40  flex  flex-col text-white">
-        <div className="hidden w-[2000.98px] h-[1000.98px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
+        <div className="w-[640.03px] lg:w-[2000.98px] h-[1000.98px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
           <img
             data-aos="zoom-in-down"
-            className="w-full h-full"
+            className="w-full h-full "
             src="./images/Background-Pattern.png"
             alt="background-pattern"
           />
@@ -23,22 +24,22 @@ const HeroComponent = () => {
         </div>
         <div className="w-full h-full mb-5 z-10 flex items-start justify-center flex-col">
           <h1
-            className="text-[60px] font-[500]  leading-[110%] "
+            className="text-[24px] md:text-[60px] font-[500]  leading-[110%] "
             data-aos="slide-right"
           >
             We create{" "}
             <span
-              className="animate-pulse text-[60px] bg-gradient-to-r from-[#B923FF] via-[#fff] to-[#B923FF] bg-clip-text text-transparent font-[500]"
+              className="animate-pulse text-[24px]  md:text-[60px] bg-gradient-to-r from-[#B923FF] via-[#fff] to-[#B923FF] bg-clip-text text-transparent font-[500]"
             >
               beautiful Experience
             </span>{" "}
           </h1>
             
-            <h1 className="text-[60px] leading-[110%] font-[500] mb-4" data-aos="slide-right" >
+            <h1 className="text-[24px] md:text-[60px] leading-[110%] font-[500] mb-4" data-aos="slide-right" >
             Explore Our Portfolio
           </h1>
 
-          <p className="w-full text-[20px] font-[400] leading-[157%] lg:w-[709px]">
+          <p className="w-full text-[14px] md:text-[20px] font-[400] leading-[157%] lg:w-[709px] mb-4 md:mb-0">
             We are a software solutions company based in Maryland, USA, with a
             globally distributed team of experts. Since 2015, we’ve helped over
             500 happy clients achieve their digital goals by delivering
@@ -46,6 +47,8 @@ const HeroComponent = () => {
             Edoubleone, every project is handled with attention to detail and a
             deep commitment to quality.
           </p>
+
+          <CustomButton title="Get in touch" className="block md:hidden text-[13px]" />
         </div>
       </div>
     </div>
