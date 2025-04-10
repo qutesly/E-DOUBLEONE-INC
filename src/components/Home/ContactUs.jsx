@@ -3,8 +3,8 @@ import CustomButton from "./Custom-button";
 
 const ContactUs = () => {
   return (
-    <div className="w-full relative flex items-center justify-center px-4 sm:px-6 md:px-10 py-10 overflow-hidden"> {/* ✅ Added padding and removed overflow issues */}
-  <div className="w-full max-w-[950px] bg-gradient-to-tl from-black to-white rounded-2xl p-[1px] mt-20 lg:mt-[20rem]">
+    <div className="w-full border relative flex items-center justify-center px-4 sm:px-6 md:px-10 py-10 overflow-hidden"> {/* ✅ Added padding and removed overflow issues */}
+  <div className="w-full max-w-[950px] bg-gradient-to-tl from-black to-white rounded-2xl p-[1px] mt-20 lg:mt-[10rem]">
     <div className="flex flex-col lg:flex-row items-start justify-between py-10 px-6 sm:px-10 bg-[#283082] rounded-2xl text-white">
       
       {/* Left Contact Info Section */}

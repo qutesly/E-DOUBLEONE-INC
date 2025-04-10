@@ -14,7 +14,7 @@ const CustomButton = ({ title, className, href, onClick }) => {
     <>
       <button
         onClick={handleClick}
-        className={`${className} min-w-[40px] bg-[#FF4B0A] px-8 py-3 text-white text-[10px] md:text-[14px] rounded-md flex items-center justify-center opacity-100 hover:opacity-30 transition-opacity `}
+        className={`${className} min-w-[40px] bg-[#FF4B0A] px-8 py-3 text-white text-[10px] md:text-[14px] rounded-md flex items-center justify-center  hover:bg-[#ff4c1fb4] cursor-pointer transition-opacity `}
       >
         {title}
       </button>

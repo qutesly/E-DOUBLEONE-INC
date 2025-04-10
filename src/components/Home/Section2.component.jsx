@@ -46,7 +46,7 @@ const Section2Component = () => {
             </button>
 
             {/* Description */}
-            <p className="text-[12px] sm:text-[18px] text-[#B4BEFF] lg:text-[24px] mb-4 leading-[1.4] break-words">
+            <p className="text-[12px]  text-[#B4BEFF] md:text-[18px] mb-4 leading-[1.4] break-words">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               ipsum arcu, posuere nec dolor ac, feugiat dictum urna.
             </p>
