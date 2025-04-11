@@ -10,21 +10,24 @@ const Section1Component = () => {
     {
       image: "./images/genzee-img.png",
       title: "Genzee Real Estate",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/"
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/",
     },
     {
       image: "./images/oversabi-nurse.png",
       title: "OverSabi Nurse",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/"
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/",
     },
     {
       image: "./images/ejiro-kitchen.png",
       title: "Ejiro's Kitchen",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/"
-    }
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/",
+    },
   ];
 
   const [isPaused, setIsPaused] = useState(false);
@@ -82,13 +85,22 @@ const Section1Component = () => {
         <button className="bg-[#2A3187] px-4 py-2 text-sm rounded-md mb-2">
           Website
         </button>
-        <h1 className="text-2xl md:text-5xl font-bold leading-tight" data-aos="slide-left">
+        <h1
+          className="text-2xl md:text-5xl font-bold leading-tight"
+          data-aos="slide-left"
+        >
           {slides[currentIndex].title}
         </h1>
-        <p className="text-sm md:text-lg text-[#B4BEFF] -mt-4" data-aos="fade-up">
+        <p
+          className="text-sm md:text-lg text-[#B4BEFF] -mt-4"
+          data-aos="fade-up"
+        >
           {slides[currentIndex].description}
         </p>
-        <CustomButton title="View website" className="flex items-center justify-center"/>
+        <CustomButton
+          title="View website"
+          className="flex items-center justify-center"
+        />
       </div>
 
       {/* Image Slider */}
@@ -98,7 +110,9 @@ const Section1Component = () => {
           onClick={prevImage}
           disabled={currentIndex === 0}
           className={`w-8 md:w-12 transition-opacity ${
-            currentIndex === 0 ? "opacity-0 cursor-not-allowed" : "hover:opacity-80"
+            currentIndex === 0
+              ? "opacity-0 cursor-not-allowed"
+              : "hover:opacity-80"
           }`}
         >
           <img
@@ -112,12 +126,15 @@ const Section1Component = () => {
         <div className="w-full max-w-4xl relative">
           <div className="relative flex items-center justify-center">
             {/* Union Background */}
-            <img
-              className="w-full h-auto"
-              src="./images/Union.png"
-              alt="Union Background"
-              data-aos="zoom-in-up"
-            />
+            <div className="overflow-hidden">
+              <img
+                className="w-full h-auto"
+                src="./images/Union.png"
+                alt="Union Background"
+                data-aos="zoom-in-up"
+              />
+            </div>
+
             {/* Foreground Image */}
             <div className="absolute inset-0 flex items-center justify-center p-4">
               <img

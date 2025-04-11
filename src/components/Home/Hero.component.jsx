@@ -13,8 +13,8 @@ const HeroComponent = ({onScroll}) => {
 
   return (
     <div className="w-full  h-full md:h-[80vh]">
-      <div className="relative h-full px-4 md:px-40  flex flex-col text-white">
-        <div className="w-[640.03px] lg:w-[2000px] h-[810px] xl:flex absolute bottom-[0] right-[0] z-[-10]">
+      <div className="relative h-full px-4 md:px-40  flex flex-col text-white ">
+        <div className="absolute inset-0 -z-10">
           <img
             data-aos="zoom-in-down"
             className="w-full h-full "
