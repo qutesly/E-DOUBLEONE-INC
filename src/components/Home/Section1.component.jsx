@@ -9,7 +9,7 @@ const Section1Component = () => {
   const slides = [
     {
       image: "./images/genzee-img.png",
-      title: "Genzee Real Estate",
+      title: "Genzee Realty Holdings",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
       url: "https://www.genzeerealty.com/",

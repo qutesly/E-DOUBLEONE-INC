@@ -58,7 +58,7 @@ const Section2Component = () => {
               className="text-[20px] lg:text-[56px] font-[900] leading-tight mb-4 break-words"
               data-aos="slide-down"
             >
-              Roader's Map
+              Roadersmap
             </h1>
 
             {/* Mobile App Button - Desktop */}

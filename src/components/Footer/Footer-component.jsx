@@ -28,12 +28,12 @@ const FooterComponent = () => {
           <p className="text-sm break-all">support@edoubleone.net</p>
         </div>
         <div className="flex gap-4 items-center">
-          <img src="./images/message.png" alt="Email icon" className="w-5 h-5" />
-          <p className="text-sm break-all">support@edoubleone.net</p>
+          <img src="./images/phone (2).png" alt="Email icon" className="w-5 h-5" />
+          <p className="text-sm break-all">+1 (202) 971 0392</p>
         </div>
         <div className="flex gap-4 items-center">
-          <img src="./images/message.png" alt="Email icon" className="w-5 h-5" />
-          <p className="text-sm break-all">support@edoubleone.net</p>
+          <img src="./images/WhatsApp.png" alt="Email icon" className="w-5 h-5" />
+          <p className="text-sm break-all">+1 (202) 971-0392</p>
         </div>
   
         {/* Socials */}
@@ -45,6 +45,7 @@ const FooterComponent = () => {
         </div>
       </div>
     </div>
+
   
     {/* Background Image */}
     <div className="w-full absolute bottom-0 left-0 -z-10">
@@ -54,7 +55,16 @@ const FooterComponent = () => {
         className="w-full object-cover"
       />
     </div>
-    <div className="px-6 sm:px-10 md:px-40"></div>
+    {/* <div className="w-full px-6 sm:px-10 md:px-40">
+      <div className="border border-[#404040]">
+        <div>
+          <p>Process</p>
+          <p>Services</p>
+          <p>Portfolio</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+    </div> */}
   </div>
   );
 };
