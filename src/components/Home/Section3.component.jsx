@@ -9,7 +9,7 @@ const Section3Component = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden"> {/* ✅ Ensures nothing spills outside */}
+    <div className="relative overflow-hidden">
   <div className="absolute top-[710px] left-0 -z-10 w-full">
     <img
       src="./images/Background-Pattern-(1).png"
@@ -19,7 +19,7 @@ const Section3Component = () => {
   </div>
 
   <div className="flex flex-col text-white mt-[3rem] md:mt-[5rem] px-6 sm:px-10 md:px-20 lg:px-40 mb-5 z-50">
-    <h1 className="text-[20px] lg:text-[56px] font-[900] text-start leading-[25px] md:leading-[60px] mt-8 mb-4 w-full max-w-[200px] md:max-w-[600px] ">
+    <h1 className="text-[20px] lg:text-[56px] font-[900] text-start leading-[25px] md:leading-[60px] mt-8 mb-4 w-full max-w-[200px] md:max-w-[600px]">
       More Projects From our Archive
     </h1>
 
@@ -55,14 +55,14 @@ const Section3Component = () => {
       />
       <CardComponent
         title="Memscepter"
-        href="/https://www.memscepterbhc.com/"
+        href="https://memscepterbhc.com/"
         src="./images/memscepter-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="zoom-in-left"
       />
       <CardComponent
         title="Summit Alliance"
-        href="https://steppingstonesbhw.com"
+        href="https://summitalliance.vercel.app/services/healthcare"
         src="./images/summit-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="zoom-in-right"

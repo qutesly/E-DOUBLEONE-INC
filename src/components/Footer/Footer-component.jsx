@@ -2,9 +2,9 @@ import React from "react";
 
 const FooterComponent = () => {
   return (
-    <div className="w-full relative text-white pb-32 overflow-hidden"> {/* ✅ Prevents overflow */}
+    <div className="w-full relative text-white pb-32 overflow-hidden"> 
     {/* Content Section */}
-    <div className="w-full  flex flex-col md:flex-row items-start justify-between gap-10 px-6 sm:px-10 md:px-40 py-10">
+    <div className="w-full flex flex-col md:flex-row items-start justify-between gap-10 px-6 sm:px-10 md:px-40 py-10">
       
       {/* Left Column */}
       <div className="flex flex-col items-start gap-5 max-w-full md:max-w-[311px]">
@@ -20,12 +20,12 @@ const FooterComponent = () => {
       </div>
   
       {/* Right Column */}
-      <div className="flex flex-col items-start gap-6 w-full md:w-auto overflow-hidden"> {/* ✅ overflow-hidden added */}
+      <div className="flex flex-col items-start gap-6 w-full md:w-auto overflow-hidden"> 
         
         {/* Contact Rows */}
         <div className="flex gap-4 items-center">
           <img src="./images/message.png" alt="Email icon" className="w-5 h-5" />
-          <p className="text-sm break-all">support@edoubleone.net</p> {/* ✅ break-all prevents overflow */}
+          <p className="text-sm break-all">support@edoubleone.net</p>
         </div>
         <div className="flex gap-4 items-center">
           <img src="./images/message.png" alt="Email icon" className="w-5 h-5" />
@@ -54,6 +54,7 @@ const FooterComponent = () => {
         className="w-full object-cover"
       />
     </div>
+    <div className="px-6 sm:px-10 md:px-40"></div>
   </div>
   );
 };

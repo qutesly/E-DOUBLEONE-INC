@@ -124,7 +124,7 @@ const Section1Component = () => {
 
         {/* Image Display */}
         <div className="w-full max-w-4xl relative">
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center overflow-hidden">
             {/* Union Background */}
             <div className="overflow-hidden">
               <img
