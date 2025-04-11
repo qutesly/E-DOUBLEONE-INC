@@ -12,7 +12,7 @@ const navItems = [
 
 const NavLinks = ({ onClickLink }) => {
   return (
-    <ul className="flex flex-col md:flex-row items-center gap-6">
+    <ul className="flex flex-col md:flex-row items-center md:gap-8 gap-6 md:static text-white">
       {navItems.map((item) => (
         <li key={item.name} onClick={onClickLink}>
           <Link

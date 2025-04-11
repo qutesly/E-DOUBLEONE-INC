@@ -70,7 +70,7 @@ const Section1Component = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center relative pt-8 md:pt-20 px-6">
+    <div className="w-full h-full flex flex-col items-center justify-center relative pt-8 md:pt-20 px-6 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -82,17 +82,17 @@ const Section1Component = () => {
       </div>
 
       {/* Content */}
-      <div className="w-full max-w-3xl text-white text-center z-10 mb-8 md:mb-16">
+      <div className="w-full max-w-3xl text-white flex items-center justify-center flex-col gap-8 text-center z-10 mb-8 md:mb-16">
         <button className="bg-[#2A3187] px-4 py-2 text-sm rounded-md mb-2">
           Website
         </button>
         <h1 className="text-2xl md:text-5xl font-bold leading-tight" data-aos="slide-left">
           {slides[currentIndex].title}
         </h1>
-        <p className="text-sm md:text-lg text-[#B4BEFF] mt-4" data-aos="fade-up">
+        <p className="text-sm md:text-lg text-[#B4BEFF] -mt-4" data-aos="fade-up">
           {slides[currentIndex].description}
         </p>
-        <CustomButton title="View website" className="w-full"/>
+        <CustomButton title="View website" className="flex items-center justify-center"/>
       </div>
 
       {/* Image Slider */}
