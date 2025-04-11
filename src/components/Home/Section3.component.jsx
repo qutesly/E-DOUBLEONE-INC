@@ -34,7 +34,7 @@ const Section3Component = () => {
       />
       <CardComponent
         title="Genzee Real Estate"
-        href="/https://www.genzeerealty.com/"
+        href="https://www.genzeerealty.com/"
         src="./images/genzee-project.png"
         details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat dictum urna."
         data-aos="slide-left"

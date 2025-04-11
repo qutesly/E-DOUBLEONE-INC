@@ -12,21 +12,21 @@ const Section1Component = () => {
       title: "Genzee Real Estate",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/",
+      url: "https://www.genzeerealty.com/",
     },
     {
       image: "./images/oversabi-nurse.png",
       title: "OverSabi Nurse",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/",
+      url: "https://oversabinurse.com/",
     },
     {
       image: "./images/ejiro-kitchen.png",
       title: "Ejiro's Kitchen",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
-      url: "/",
+      url: "https://www.ejirokitchen.com/",
     },
   ];
 
