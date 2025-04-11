@@ -92,7 +92,7 @@ const Section1Component = () => {
           {slides[currentIndex].title}
         </h1>
         <p
-          className="text-sm md:text-lg text-[#B4BEFF] -mt-4"
+          className="text-sm md:text-lg text-[#B4BEFF] -my-4"
           data-aos="fade-up"
         >
           {slides[currentIndex].description}
@@ -136,7 +136,7 @@ const Section1Component = () => {
             </div>
 
             {/* Foreground Image */}
-            <div className="absolute inset-0 flex items-center justify-center p-4">
+            <div className="absolute inset-0 flex items-center justify-center px-4 pt-4" >
               <img
                 key={currentIndex}
                 className="w-full max-h-[60vh] object-contain rounded-lg"

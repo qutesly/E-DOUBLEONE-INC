@@ -25,7 +25,7 @@ const FooterComponent = () => {
         {/* Contact Rows */}
         <div className="flex gap-4 items-center">
           <img src="./images/message.png" alt="Email icon" className="w-5 h-5" />
-          <p className="text-sm break-all">support@edoubleone.net</p>
+          <p className="text-sm break-all">info@edoubleone.net</p>
         </div>
         <div className="flex gap-4 items-center">
           <img src="./images/phone (2).png" alt="Email icon" className="w-5 h-5" />
