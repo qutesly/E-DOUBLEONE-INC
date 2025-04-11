@@ -3,10 +3,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import CustomButton from "./Custom-button";
 
-const HeroComponent = () => {
+const HeroComponent = ({onScroll}) => {
+
   useEffect(() => {
     Aos.init({ duration: 3000 });
   });
+
+
 
   return (
     <div className="w-full h-full md:h-[80vh]">
@@ -49,7 +52,7 @@ const HeroComponent = () => {
             deep commitment to quality.
           </p>
 
-          <CustomButton title="Get in touch" className="block md:hidden text-[13px]" />
+          <CustomButton title="Get in touch" className="block md:hidden text-[13px]" onClick={onScroll}/>
         </div>
       </div>
     </div>

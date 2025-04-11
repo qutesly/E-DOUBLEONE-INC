@@ -1,20 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const NavLinks = ({}) => {
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Portfolio", path: "/portfolio" },
+  { name: "Contact Us", path: "/contact" },
+  { name: "Blog", path: "/blog" },
+];
+
+const NavLinks = ({ onClickLink }) => {
   return (
-    <div className="w-full h-full flex items-center justify-between fixed bg-[#283082] z-[100] cursor-pointer">
-      {/* <ul className={`${className} w-full h-full flex flex-col md:flex-row items-start md:items-center`}>
-        <li className="text-base hover:text-[#FF4B0A] transition-colors duration-200">Home</li>
-        <li className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-3">About</li>
-        <li className="flex items-center gap-1 text-base hover:text-[#FF4B0A] transition-colors duration-200">
-          Services
-          <img className="w-4 h-4" src="./images/arrow_drop_down.png" alt="arrow drop-down" />
+    <ul className="flex flex-col md:flex-row items-center gap-6">
+      {navItems.map((item) => (
+        <li key={item.name} onClick={onClickLink}>
+          <Link
+            to={item.path}
+            className="text-base hover:text-[#FF4B0A] transition-colors duration-200 flex items-center"
+          >
+            {item.name === "Services" ? (
+              <>
+                Services
+                <img
+                  className="w-4 h-4 ml-1"
+                  src="./images/arrow_drop_down.png"
+                  alt="dropdown icon"
+                />
+              </>
+            ) : (
+              item.name
+            )}
+          </Link>
         </li>
-        <li className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-3">Portfolio</li>
-        <li className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-3">Contact Us</li>
-        <li className="text-base hover:text-[#FF4B0A] transition-colors duration-200 px-3">Blog</li>
-      </ul> */}
-    </div>
+      ))}
+    </ul>
   );
 };
 

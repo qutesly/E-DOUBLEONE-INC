@@ -3,16 +3,34 @@ import CustomButton from "./Custom-button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
 const Section1Component = () => {
-  const photos = [
-    "./images/genzee-img.png",
-    "./images/oversabi-nurse.png",
-    "./images/ejiro-kitchen.png",
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const slides = [
+    {
+      image: "./images/genzee-img.png",
+      title: "Genzee Real Estate",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/"
+    },
+    {
+      image: "./images/oversabi-nurse.png",
+      title: "OverSabi Nurse",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/"
+    },
+    {
+      image: "./images/ejiro-kitchen.png",
+      title: "Ejiro's Kitchen",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
+      url: "/"
+    }
+    
+    
+    
   ];
 
-  const [current, setCurrent] = useState(0);
+  // const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -24,10 +42,10 @@ const Section1Component = () => {
     if (isPaused) return;
 
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % photos.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 9000);
     return () => clearInterval(interval);
-  }, [isPaused, photos.length]);
+  }, [isPaused, slides.length]);
 
   const pauseAutoSlide = () => {
     setIsPaused(true);
@@ -38,92 +56,80 @@ const Section1Component = () => {
   };
 
   const prevImage = () => {
-    if (current > 0) {
+    if (currentIndex > 0) {
       pauseAutoSlide();
-      setCurrent((prev) => prev - 1);
+      setCurrentIndex((prev) => prev - 1);
     }
   };
 
   const nextImage = () => {
-    if (current < photos.length - 1) {
+    if (currentIndex < slides.length - 1) {
       pauseAutoSlide();
-      setCurrent((prev) => prev + 1);
+      setCurrentIndex((prev) => prev + 1);
     }
   };
 
   return (
-    <div className="w-full h-full relative pt-[2rem] md:pt-[10rem] px-6 overflow-hidden">
-      <div className="w-full absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
-
-      <div className="w-[630.03px] lg:w-[1855px] h-[700px] xl:block absolute top-[0] right-[0] -z-50">
+    <div className="w-full h-full flex flex-col items-center justify-center relative pt-8 md:pt-20 px-6">
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
         <img
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           src="./images/Top-Background-Pattern.png"
-          alt=""
+          alt="Background Pattern"
           data-aos="zoom-in-up"
         />
       </div>
 
-      <div className="w-full lg:w-[700px] m-auto flex flex-col flex-wrap items-center md:justify-center text-white text-center z-50 mb-8 md:mb-16">
-        <button className="bg-[#2A3187] min-w-[20px] px-4 py-2 text-[12px] rounded-md mb-2 z-50">
+      {/* Content */}
+      <div className="w-full max-w-3xl text-white text-center z-10 mb-8 md:mb-16">
+        <button className="bg-[#2A3187] px-4 py-2 text-sm rounded-md mb-2">
           Website
         </button>
-        <h1
-          className="text-[20px] lg:text-[56px] leading-[100%] font-[900]"
-          data-aos="slide-left"
-        >
-          Genzee Real Estate
+        <h1 className="text-2xl md:text-5xl font-bold leading-tight" data-aos="slide-left">
+          {slides[currentIndex].title}
         </h1>
-        <p
-          className="text-[12px] text-[#B4BEFF] w-full sm:w-full md:w-[654px] md:text-[18px] mb-4 flex flex-wrap"
-          data-aos="fade-up"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum
-          arcu, posuere nec dolor ac, feugiat
+        <p className="text-sm md:text-lg text-[#B4BEFF] mt-4" data-aos="fade-up">
+          {slides[currentIndex].description}
         </p>
-        <CustomButton title="View website" />
+        <CustomButton title="View website" className="w-full"/>
       </div>
 
-      {/* Image slider area */}
-      <div className="flex items-center justify-between gap-4 z-30 relative">
+      {/* Image Slider */}
+      <div className="w-full flex items-center justify-center gap-4 z-10">
         {/* Prev Button */}
         <button
           onClick={prevImage}
-          disabled={current === 0}
-          className={`transition-opacity ${
-            current === 0
-              ? "opacity-0 cursor-not-allowed"
-              : "cursor-pointer hover:opacity-80"
-          } w-[30px] md:w-[50px]`}
+          disabled={currentIndex === 0}
+          className={`w-8 md:w-12 transition-opacity ${
+            currentIndex === 0 ? "opacity-0 cursor-not-allowed" : "hover:opacity-80"
+          }`}
         >
           <img
-            className="cursor-pointer w-full"
+            className="w-full"
             src="./images/arrow-circle-right.png"
-            alt="prev arrow"
+            alt="Previous"
           />
         </button>
 
-        {/* Image container with Union bg */}
-        <div className="w-full md:w-[1114px] relative flex items-center justify-center">
-          <div className="w-[400px] md:w-full h-[200px] md:h-full">
+        {/* Image Display */}
+        <div className="w-full max-w-4xl relative">
+          <div className="relative flex items-center justify-center">
+            {/* Union Background */}
             <img
-              className="w-full h-full object-fill"
+              className="w-full h-auto"
               src="./images/Union.png"
-              alt=""
+              alt="Union Background"
               data-aos="zoom-in-up"
             />
-          </div>
-
-          <div className="absolute w-[100%] h-[200px] md:h-full top-1/2 left-1/2 aspect-[1/1] transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center px-4 md:px-8 pt-2 md:pt-8 overflow-hidden">
-            <div className="mb-4 md:mb-8">
-              {" "}
-              {/* Add margin bottom */}
+            {/* Foreground Image */}
+            <div className="absolute inset-0 flex items-center justify-center p-4">
               <img
-                key={current}
-                className="w-full h-full object-fill rounded-lg"
-                src={photos[current]}
-                alt=""
-                data-aos={current % 2 === 0 ? "slide-right" : "slide-left"}
+                key={currentIndex}
+                className="w-full h-auto max-h-96 object-contain rounded-lg"
+                src={slides[currentIndex].image}
+                alt={`Slide ${currentIndex + 1}`}
+                data-aos={currentIndex % 2 === 0 ? "slide-right" : "slide-left"}
               />
             </div>
           </div>
@@ -132,22 +138,21 @@ const Section1Component = () => {
         {/* Next Button */}
         <button
           onClick={nextImage}
-          disabled={current === photos.length - 1}
-          className={`transition-opacity ${
-            current === photos.length - 1
-              ? "opacity-0 cursor-not-allowed"
-              : "cursor-pointer hover:opacity-80"
-          } w-[30px] md:w-[50px] `}
+          disabled={currentIndex === slides.length - 1}
+          className={`w-8 md:w-12 transition-opacity ${
+            currentIndex === slides.length - 1 ? "opacity-0 cursor-not-allowed" : "hover:opacity-80"
+          }`}
         >
           <img
-            className="cursor-pointer w-full"
+            className="w-full"
             src="./images/arrow-circle-right.png"
-            alt="next arrow"
+            alt="Next"
           />
         </button>
       </div>
 
-      <div className="w-full h-[30px] md:h-[100px] absolute left-0 right-0 bottom-0 z-[100] bg-gradient-to-t from-[#3A4CBA] "></div>
+      {/* Bottom Gradient */}
+      <div className="w-full h-8 md:h-24 absolute bottom-0 bg-gradient-to-t from-[#3A4CBA]"></div>
     </div>
   );
 };

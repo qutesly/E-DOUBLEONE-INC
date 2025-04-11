@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      cursor: {
+        pointer: 'pointer'
+      },
       keyframes: {
         'fade-in-up': {
           '0%': { opacity: '0', transform: 'translateY(2rem)'},
