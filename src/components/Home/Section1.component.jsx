@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Section1Component = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const slides = [
     {
@@ -25,12 +25,8 @@ const Section1Component = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum arcu, posuere nec dolor ac, feugiat.",
       url: "/"
     }
-    
-    
-    
   ];
 
-  // const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -126,7 +122,7 @@ const Section1Component = () => {
             <div className="absolute inset-0 flex items-center justify-center p-4">
               <img
                 key={currentIndex}
-                className="w-full h-auto max-h-96 object-contain rounded-lg"
+                className="w-full max-h-[60vh] object-contain rounded-lg"
                 src={slides[currentIndex].image}
                 alt={`Slide ${currentIndex + 1}`}
                 data-aos={currentIndex % 2 === 0 ? "slide-right" : "slide-left"}
@@ -140,7 +136,9 @@ const Section1Component = () => {
           onClick={nextImage}
           disabled={currentIndex === slides.length - 1}
           className={`w-8 md:w-12 transition-opacity ${
-            currentIndex === slides.length - 1 ? "opacity-0 cursor-not-allowed" : "hover:opacity-80"
+            currentIndex === slides.length - 1
+              ? "opacity-0 cursor-not-allowed"
+              : "hover:opacity-80"
           }`}
         >
           <img
@@ -152,7 +150,7 @@ const Section1Component = () => {
       </div>
 
       {/* Bottom Gradient */}
-      <div className="w-full h-8 md:h-24 absolute bottom-0 bg-gradient-to-t from-[#3A4CBA]"></div>
+      <div className="w-full h-8 md:h-24 absolute bottom-0 bg-gradient-to-t from-[#3A4CBA] z-50"></div>
     </div>
   );
 };
